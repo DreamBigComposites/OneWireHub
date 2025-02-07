@@ -12,7 +12,7 @@
 
 class DS18B20 : public OneWireItem
 {
-private:
+protected:
 
     uint8_t scratchpad[9];
 
