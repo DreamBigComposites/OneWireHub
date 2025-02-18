@@ -55,6 +55,8 @@ void DS18B20::duty(OneWireHub * const hub)
 
         case 0x44: // CONVERT T --> start a new measurement conversion
             // we have 94 ... 750ms time here (9-12bit conversion)
+	  delay(100);
+	  //@Mark
             break; // send 1s, is passive ...
 
         default:
