@@ -26,7 +26,7 @@ public:
 
     DS18B20(uint8_t ID1, uint8_t ID2, uint8_t ID3, uint8_t ID4, uint8_t ID5, uint8_t ID6, uint8_t ID7);
 
-    void duty(OneWireHub * hub) final;
+    void duty(OneWireHub * hub);
 
     void setTemperature(float value_degC);  // -55 to +125 degC
     void setTemperature(int8_t value_degC); // -55 to +125 degC
